@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <main>
+        <div class="header sticky">
+            <div class=logo>
+
+                <a href="homepage.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="categories">
+                <ul>
+                    <li class="dropdown-content1 dropdown-content">
+                        <a href="">Men</a>
+
+                    </li>
+                    <li class="dropdown-content2 dropdown-content">
+                        <a href="">Women</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="">Kids</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="">Beauty</a>
+                    </li>
+
+
+                    <li class="dropdown-content5 dropdown-content">
+                        <a href="">Studio</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search Div -->
+            <div class="search-div">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search for products" />
+            </div>
+
+            <div class="nav-last">
+                <div>
+                    <a href="">
+                        <img id="svg" src="https://www.svgrepo.com/show/198180/user-profile.svg" alt="" />
+                    </a>
+
+                    <div>Profile</div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img id="svg" src="https://www.svgrepo.com/show/14970/heart.svg" alt="" />
+                    </a>
+
+                    <div>Wishlist</div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img id="svg" src="https://www.svgrepo.com/show/17522/bag.svg" alt="" />
+                    </a>
+
+                    <div>Bag</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PRODUCT -->
+    <section>
+        <div id="cart_page_layer"></div>
+    </section>
+    <h1 style="font-size: 30px;">All Products</h1>
+    <div id="cards">
+        <div id="cards-functionality-buttons">
+            <div id="sorting-menu">
+                <select name="sorting-options" id="sorting-options">
+                    <option value="0">Sort By</option>
+                    <option value="1">Price: High To Low</option>
+                    <option value="2">Price: Low To High</option>
+                    <option value="3">Discount</option>
+                    <option value="4">Name</option>
+                    <option value="5">Review</option>
+                    <option value="6">Popularity</option>
+                </select>
+            </div>
+            <div id="filtering-menu">
+
+                <select class="filter-options">
+                    <option value="7">Category</option>
+                    <option value="8">Makeup</option>
+                    <option value="9">Skin</option>
+                    <option value="10">Bath & Body</option>
+                </select>
+
+                <select class="filter-options">
+                    <option value="11">Price</option>
+                    <option value="12">Rs. 0 - Rs. 499</option>
+                    <option value="13">Rs. 500 - Rs. 999</option>
+                    <option value="14">Rs. 1000 - Rs. 1999</option>
+
+                </select>
+                <select class="filter-options">
+                    <option value="15">Discount</option>
+                    <option value="16">30% And Above</option>
+                    <option value="17">20% And Above</option>
+                    <option value="18">10% And Above</option>
+                    <option value="19">All Discounted Products</option>
+                </select>
+                <select class="filter-options">
+                    <option value="20">Rating</option>
+                    <option value="21">5 star</option>
+                    <option value="22">4 star</option>
+                    <option value="23">3 star</option>
+                </select>
+                <select class="filter-options" id="color-filter">
+                    <option value="24">Color</option>
+                    <option value="25">Pink</option>
+                    <option value="26">Red</option>
+                    <option value="27">Purple</option>
+                    <option value="28">Blue</option>
+                    <option value="29">Green</option>
+                    <option value="30">Yellow</option>
+                    <option value="31">Maroon</option>
+                    <option value="32">Black</option>
+                    <option value="33">Brown</option>
+                    <option value="34">Orange</option>
+                    <option value="35">Coral</option>
+                    <option value="36">Multi-color</option>
+                    <option value="37">White</option>
+                    <option value="38">Transparent</option>
+                    <option value="39">Peach</option>
+                    <option value="40">Gold</option>
+                    <option value="41">Silver</option>
+                    <option value="42">Grey</option>
+                    <option value="43">Beige</option>
+                    <option value="44">Lavender</option>
+                    <option value="45">Rust</option>
+                    <option value="46">Cyan</option>
+                </select>
+                <select class="filter-options">
+                    <option value="47">Gender</option>
+                    <option value="48">Women</option>
+                    <option value="49">Men</option>
+                </select>
+                <select class="filter-options">
+                    <option value="50">Formulation</option>
+                    <option value="51">Liquid</option>
+                    <option value="52">Pencil</option>
+                    <option value="53">Pressed Powder</option>
+                    <option value="54">Cream</option>
+                    <option value="55">Stick</option>
+                    <option value="56">Kajal</option>
+                    <option value="57">Crayon</option>
+                    <option value="58">Spray</option>
+                    <option value="59">Wipes</option>
+                    <option value="60">Powder</option>
+                    <option value="61">Mousse</option>
+                    <option value="62">Loose Powder</option>
+                    <option value="63">Gel</option>
+                    <option value="64">Lotion/Body Butter</option>
+                    <option value="65">Pen</option>
+                    <option value="66">Serum</option>
+                    <option value="67">Oil</option>
+                    <option value="68">Balm</option>
+                </select>
+                <select class="filter-options">
+                    <option value="69">Preference</option>
+                    <option value="70">Waterproof</option>
+                    <option value="71">Vitamin E</option>
+                    <option value="72">Paraben Free</option>
+                    <option value="73">Cruelty-Free</option>
+                </select>
+            </div>
+        </div>
+        <div id="product-cards"></div>
+    </div>
+
+</section>
+
+    
+</body>
+</html>
