@@ -7,6 +7,7 @@
     <title>product page</title>
     <link rel="stylesheet" href="product.css">
     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
+    
 </head>
 </head>
 <body>
@@ -23,11 +24,11 @@
             <div class="categories">
                 <ul>
                     <li class="dropdown-content1 dropdown-content">
-                        <a href="">Men</a>
+                        <a href="mens.html">Men</a>
 
                     </li>
                     <li class="dropdown-content2 dropdown-content">
-                        <a href="">Women</a>
+                        <a href="products.html">Women</a>
                     </li>
                     <li class="dropdown-content3 dropdown-content">
                         <a href="">Kids</a>
@@ -51,7 +52,9 @@
             </div>
 
             <div class="nav-last">
-                <div>
+
+                <div id="signup">
+
                     <a href="">
                         <img id="svg" src="https://www.svgrepo.com/show/198180/user-profile.svg" alt="" />
                     </a>
@@ -75,8 +78,70 @@
                     <div>Bag</div>
                 </div>
             </div>
+            
+            
         </div>
     </main>
+    <!-- Login and Signup modals starts here  -->
+    <div class="modals">
+        <button
+        id="closemodal"
+        style="margin-left:660px; position:absolute; z-index:200; background-color:#ff4266; border:none;font-size:18px">&cross;</button>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form id="signupform" action="signup" method="post">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input id="name" name="name" type="text" placeholder="Name" required/>
+            <input id="email" name="email" type="email" placeholder="Email" required/>
+            <input id="password" name="password" type="password" placeholder="Password" required/>
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="login" method="post" id="loginform">
+            <h1>Log in</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" id="email" name="email" required/>
+            <input type="password" placeholder="Password" id="password" name="password" required/>
+            <a href="#">Forgot your password?</a>
+            <button>Log In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, guys welcome to season sales!</h1>
+              <p>Enter your <details></details></p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Singup and login modals end here  -->
 
     <!-- PRODUCT -->
     <section>
@@ -177,11 +242,7 @@
                     <option value="68">Balm</option>
                 </select>
                 <select class="filter-options">
-                    <option value="69">Preference</option>
-                    <option value="70">Waterproof</option>
-                    <option value="71">Vitamin E</option>
-                    <option value="72">Paraben Free</option>
-                    <option value="73">Cruelty-Free</option>
+                            
                 </select>
             </div>
         </div>
@@ -197,3 +258,31 @@
 </body>
 </html>
 <script src="product.js"></script>
+
+<script>
+    // Signup and login function starts here
+
+const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("container");
+const signup = document.querySelector("#signup");
+const modal = document.querySelector(".modals");
+const closeModal = document.querySelector("#closemodal");
+
+signUpButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
+
+signup.addEventListener("click", (e) => {
+    e.preventDefault()
+  modal.classList.add("showmodal");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("showmodal");
+});
+</script>

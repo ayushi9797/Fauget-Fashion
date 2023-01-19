@@ -3,13 +3,13 @@ const express = require("express");
 const { authenticate } = require("../middleware/authentication_middleware");
 const { ProductModel } = require("../models/productschema");
 
-const GetRouter = express.Router();
+const WomenRouter = express.Router();
 
-GetRouter.get("/", (req, res) => {
-  res.send("WELCOME  Router GET home");
+WomenRouter.get("/", (req, res) => {
+  res.send("WELCOME  Router Women home");
 });
 
-GetRouter.get("/get", async (req, res) => {
+WomenRouter.get("/Women", async (req, res) => {
   try {
     const user = await ProductModel.find();
     console.log(user)
@@ -22,7 +22,7 @@ GetRouter.get("/get", async (req, res) => {
 
 
 
-GetRouter.post("/create", async (req, res) => {
+WomenRouter.post("/Women", async (req, res) => {
     const {name,images,category,price,discount, userID } = req.body;
     try {
       const data = new ProductModel({name,images,category,price,discount,userID });
@@ -36,5 +36,5 @@ GetRouter.post("/create", async (req, res) => {
   });
 
 module.exports={
-    GetRouter,
+    WomenRouter,
 }
