@@ -1,0 +1,83 @@
+[
+    {
+        "name":"Sembo Block Famous Car",
+        "strike_price":4999,
+        "price":2999,
+        "rating":5,
+        "price_off":"20%",
+        "no_of_products":30,
+        "thumbnail":"https://m.media-amazon.com/images/I/51FJspWFnHL._AC_UL320_.jpg"
+    },
+    {
+        "name":"Einstein Box Electricity Kit",
+        "strike_price":749,
+        "price":550,
+        "rating":4,
+        "price_off":"10%",
+        "no_of_products":10,
+        "thumbnail":"https://m.media-amazon.com/images/I/71oat1r8S4L._AC_UL320_.jpg"
+    },
+    {
+        "name":"Jungle Magic Doodle Waterz",
+        "strike_price":278,
+        "price":190,
+        "rating":3,
+        "price_off":"10%",
+        "no_of_products":10,
+        "thumbnail":"https://m.media-amazon.com/images/I/71UwxoN8WOL._AC_UL320_.jpg"
+    },
+    {
+        "name":"Sembo Block Famous Car 2",
+        "strike_price":4999,
+        "price":1999,
+        "rating":4,
+        "price_off":"40%",
+        "no_of_products":110,
+        "thumbnail":"https://m.media-amazon.com/images/I/61DIwRIuJLL._AC_UL320_.jpg"
+    },
+    {
+        "name":"Storio Toys Dancing Cactus Talking",
+        "strike_price":1799,
+        "price":1299,
+        "rating":5,
+        "price_off":"30%",
+        "no_of_products":80,
+        "thumbnail":"https://m.media-amazon.com/images/I/71BAdf6V32L._AC_UL320_.jpg"
+    },
+    {
+        "name":"Storio Kids Toys LCD Writing",
+        "strike_price":789,
+        "price":459,
+        "rating":3,
+        "price_off":"30%",
+        "no_of_products":40,
+        "thumbnail":"https://m.media-amazon.com/images/I/61Pg1H7U15L._AC_UL320_.jpg"
+    },
+    {
+        "name":"OXIN Mini 6 Slids",
+        "strike_price":678,
+        "price":550,
+        "rating":5,
+        "price_off":"40%",
+        "no_of_products":7,
+        "thumbnail":"https://m.media-amazon.com/images/I/61uKZh7xijL._AC_UL320_.jpg"
+    },
+    {
+        "name":"FunBlast DIY Plastic Building",
+        "strike_price":1290,
+        "price":740,
+        "rating":4,
+        "price_off":"50%",
+        "no_of_products":20,
+        "thumbnail":"https://m.media-amazon.com/images/I/614hC7xBgtL._AC_UL320_.jpg"
+    },
+    {
+        "name":"Amitasha Plastic Archery",
+        "strike_price":890,
+        "price":650,
+        "rating":5,
+        "price_off":"20%",
+        "no_of_products":120,
+        "thumbnail":"https://m.media-amazon.com/images/I/417eK2Qnc0L._AC_UL320_.jpg"
+    }
+]

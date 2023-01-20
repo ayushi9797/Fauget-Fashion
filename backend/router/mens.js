@@ -1,4 +1,3 @@
-// const { application } = require("express")
 const express = require("express");
 // const { authenticate } = require("../middleware/authentication_middleware");
 const { MensModel } = require("../models/mensschema");

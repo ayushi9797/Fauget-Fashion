@@ -16,7 +16,7 @@ let div=document.getElementById("product-cards")
 function renderData(data){
     div.innerHTML=`${data.map((elem)=>{
         return ` <div id="dummy-cart">
-        <h2>${name}</h2>
+        <h2>${elem.name}</h2>
         <img src="${elem.thumbnail}" alt="">
         <h2> strike_price:  ${elem.strike_price} <i class="fa-regular fa-dollar-sign"></i></h3>
         <h3> Price :${elem.price} <i class="fa-solid fa-comments-dollar"></i></h3>

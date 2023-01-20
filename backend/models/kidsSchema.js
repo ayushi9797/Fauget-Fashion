@@ -1,18 +1,19 @@
 const mongoose = require("mongoose");
 
-const MensSchema = new mongoose.Schema({
+const KidsSchema = new mongoose.Schema({
   name: String,
-  strike_price:String,
+  strike_price:Number,
   price: Number,
   rating:Number,
+  price_off:String, 
   no_of_products:Number,
   thumbnail:String,
   
   
 });
 
-const MensModel = mongoose.model("mens", MensSchema);
+const KidsModel = mongoose.model("Kids", KidsSchema);
 
 module.exports = {
-  MensModel,
+  KidsModel,
 };
