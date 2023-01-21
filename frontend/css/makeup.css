@@ -13,7 +13,16 @@ body {
 }
 
 /* ----------------------mid-section-------------------------- */
-
+.fa-bars{
+    display: block;
+    z-index: 1000;
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
 
 #cards {
     display: flex;
@@ -140,7 +149,7 @@ p{
     margin-top: 10px;
 }
 /* -------------------------------------------------------------Responsive------------------------------------------------------------- */
-@media screen and (max-width:1080px){
+@media  (max-width:1080px){
     #product-cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -159,3 +168,12 @@ p{
     
 }
 
+@media  (max-width:600px){
+    #product-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+   
+    
+    
+}
