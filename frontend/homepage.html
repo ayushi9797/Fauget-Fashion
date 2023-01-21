@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <main>
-        <div class="header sticky">
+        <i class="fa-solid fa-bars" onclick="menuhome()"></i>
+        <div  id="dropdown" class="header sticky">
+            
             <div class=logo>
 
                 <a href="homepage.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
@@ -41,6 +45,7 @@
                     </li>
                 </ul>
             </div>
+            
 
             <!-- Search Div -->
             <div class="search-div">
@@ -85,6 +90,40 @@
             </div>
         </div>
     </main>
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/28/84b6a214-9eb3-49eb-9f9d-72cec56ec5d71659019908592-Indian-Wear_DK--1-.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/28/0174e4d7-448c-4746-8572-69461ad5be101659020268081-Tops---Tees_Desk.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/31/4031994d-9092-4aa7-aea1-f52f2ae5194f1654006594976-Activewear_DK.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/179e278f-77ee-44c2-bf39-9f00b0cd08e01658752429301-Handbags_Desk.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/6/27/53b4daed-cd2c-4111-86c5-14f737eceb351656325318973-Handbags_Desk.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_665,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_665,c_limit,fl_progressive,dpr_2.0/assets/images/2022/6/27/53b4daed-cd2c-4111-86c5-14f737eceb351656325318973-Handbags_Desk.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://assets.myntassets.com/f_webp,w_665,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
 
     <!-- downdown remaining -->
 
@@ -370,3 +409,42 @@
 
 </html>
 <script src="./src/index.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    // hamburger
+
+let home = document.getElementById("dropdown")
+home.style.display = "flex"
+
+
+function menuhome() {
+     if (home.style.display == "none") {
+          home.style.display = "flex"
+     }
+     else {
+          home.style.display = "none"
+     }
+}
+
+
+
+
+//   Initialize Swiper 
+var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>

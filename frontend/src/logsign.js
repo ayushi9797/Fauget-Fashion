@@ -50,23 +50,38 @@ const registeration_form = document.querySelector(".sign-up-form");
 
     //login
 
-    // const login_form = document.querySelector(".sign-in-form");
-    // login_form.addEventListener("submit",(e)=>{
-    //     e.preventDefault()
-    //     const email = document.getElementById("email");
-    //     const password = document.getElementById("password");
-    //     const uObject = {
-    //         email: email.value,
-    //         password: password.value
-    //     }
-    //     console.log(uObject)
 
-    //     fetch("http://localhost:4500/user/login",{
-    //         method:"POST",
-    //         body:JSON.stringify(uObject);
-    //     })
-        
+    const just_clicked = () => {
+        const login_value = document.querySelector('.sign-in-form')
+        login_value.addEventListener("click",  function (e) {
+            e.preventDefault()
+            const email = document.getElementById('email')
+            const password = document.getElementById('password')
+    
+            const userObject = {
+                email: email.value,
+                password: password.value
+            }
+            console.log(userObject);
+    
+            fetch('http://localhost:4500/user/login', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userObject),
+            }).then((respond) => {
+                return respond.json()
+            }).then((data) => {
+                console.log(data);
+                localStorage.setItem('Token', data.token)
+                alert(`successfully logged in`)
+                window.location.href = './homepage.html'
+            }).catch((error)=>{
+                console.log({'error':error});
+            })
+        })
+    }
+    
 
-    // })
-
-
+    

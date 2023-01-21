@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
 
     <main>
-        <div class="header sticky">
+        <div          class="header sticky">
             <div class=logo>
 
                 <a href="homepage.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
@@ -80,7 +80,7 @@
     </main>
 
     <!-- PRODUCT -->
-    <section>
+    <!-- <section>
         <div id="cart_page_layer"></div>
     </section>
     
@@ -90,7 +90,237 @@
 
     </div>
 
-</section>
+</section> -->
+<div id="naz-content-container">
+    <!-- Sidebar -->
+    <div id="naz-sidebar">
+        <div id="naz-sidebar">
+            <div id="mobile-filter">
+                <div>
+                    <h4 id="burgundy">Refine By</h4>
+                </div>
+                <div class="py-1 border-bottom ml-3">
+                    <h6 class="font-weight-bold">Gender</h6>
+                    <div id="orange"><span class="fa fa-minus"></span></div>
+                    <form>
+                        <div class="form-group">
+                            <input type="checkbox" id="menFilter" />
+                            <label for="menFilter">Men Styles</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="womenFilter" />
+                            <label for="womenFilter">Women Styles</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="kidsFilter" />
+                            <label for="kidsFilter">Kids Styles</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="py-2 border-bottom ml-3">
+                <h6 class="font-weight-bold">Category</h6>
+                <div id="orange"><span class="fa fa-minus"></span></div>
+                <form>
+                    <div class="form-group">
+                        <input type="checkbox" id="shirtFilter" />
+                        <label for="shirtFilter">Shirts</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="tshirtFilter" />
+                        <label for="tshirtFilter">T-Shirts</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="jacketFilter" />
+                        <label for="jacketFilter">Jackets</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="trouserFilter" />
+                        <label for="trouserFilter">Trousers</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="shortsFilter" />
+                        <label for="shortsFilter">Shorts</label>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="checkbox" id="menkurta" />
+                        <label for="menkurtafilter">Men's Kurta</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="jeans" />
+                        <label for="jeansfilter">Men's Jeans</label>
+                    </div>
+                </form>
+            </div>
+            <button id="filterButton">Filter</button>
+        </div>
+    </div>
+
+    <!-- Product Container -->
+    <div id="product-container"></div>
+
+    <!-- Sort By Price -->
+    <div id="naz-sort-products">
+        <span id="naz-sort-text">SORT BY</span>
+        <select name="sort" id="sort-products-option">
+            <option value="Relevence">Relevence</option>
+            <option value="Discount">Discount</option>
+            <option value="hightolow">Price (highest first)</option>
+            <option value="lowtohigh">Price (lowest first)</option>
+        </select>
+        <!-- Sort By Price Ends -->
+    </div>
+</div>
+
+</body>
+
+</html>
+<!-- <script src="./assets/womenData.js"></script> -->
+<script>
+let maleproducts = []
+let url = "http://localhost:4500/mens/men"
+fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+        maleproducts = data
+        console.log(data);
+        displayproduct(data)
+
+    });
+
+function displayproduct(data) {
+    let parent = document.getElementById("product-container");
+    parent.innerHTML = "";
+    data.map((elem) => {
+        let product = document.createElement("div")
+        product.setAttribute("class", "malediv");
+
+        let photo = document.createElement("img");
+        photo.setAttribute("class", "product-img");
+        photo.setAttribute("src", elem.imageURL);
+
+        let brand = document.createElement("p")
+        brand.setAttribute("class", "product-brand");
+        brand.innerHTML = elem.brand;
+
+        let title = document.createElement("p")
+        title.setAttribute("class", "product-title");
+        title.innerHTML = elem.product;
+
+        let price_container = document.createElement("div")
+        price_container.setAttribute("class", "price-container");
+
+
+        let price = document.createElement("p")
+        price.setAttribute("class", "price");
+        price.innerHTML = `₹${elem.price}`;
+
+        let striked = document.createElement("p")
+        striked.setAttribute("class", "striked-price");
+        striked.innerHTML = `₹${elem.strikedOffPrice}`;
+
+
+        let offer = document.createElement("p")
+        offer.setAttribute("class", "offer");
+        let offerValue = Math.floor(
+            ((elem.strikedOffPrice - elem.price) / elem.strikedOffPrice) * 100
+        );
+        offer.innerHTML = `(${offerValue}% off)`;
+
+        let button = document.createElement("button")
+        button.setAttribute("class", "btn")
+        button.innerText = "Add"
+
+        price_container.append(price, striked, offer)
+        product.append(photo, brand, title, price_container, button)
+        parent.append(product);
+
+       
+
+        // photo.addEventListener("click", function () {
+        //     addToCart(elem);
+        // });
+    })
+
+
+}
+let sort = document.getElementById("sort-products-option")
+console.log(sort);
+sort.addEventListener("change", SORT)
+function SORT() {
+    let sorting = document.getElementById("sort-products-option").value
+    console.log(sorting);
+    if (sorting == "Discount") {
+        window.location.reload()
+    } else if (sorting == "lowtohigh") {
+        maleproducts.sort((a, b) => a.price - b.price)
+        displayproduct(maleproducts)
+    } else if (sorting == "hightolow") {
+        maleproducts.sort((a, b) => b.price - a.price)
+        displayproduct(maleproducts)
+    }
+
+}
+// ------------------------------------------------------filter-------------------------------------------------------------------------------------------------------------------------
+function filterProducts() {
+    // Filtering Based On Gender
+    let menFilter = document.getElementById("menFilter");
+    let womenFilter = document.getElementById("womenFilter");
+    let kidFilter = document.getElementById("kidsFilter");
+
+    if (menFilter.checked == true) window.location.href = "./mens.html";
+
+    if (womenFilter.checked == true) window.location.href = "./products.html";
+
+    if (kidFilter.checked == true) window.location.href = "./kids.html";
+
+    // Filtering based on Categories
+    let queryURL = "http://localhost:4500/mens/filter?items=[";
+    let filterQuery = [];
+    let shirtFilter = document.getElementById("shirtFilter");
+    let tshirtFilter = document.getElementById("tshirtFilter");
+    let jacketFilter = document.getElementById("jacketFilter");
+    let trouserFilter = document.getElementById("trouserFilter");
+    let shortsFilter = document.getElementById("shortsFilter");
+    let menkurtas = document.getElementById("menkurta");
+    let jeans = document.getElementById("jeans")
+
+
+    if (shirtFilter.checked == true) filterQuery.push("shirts");
+    if (tshirtFilter.checked == true) filterQuery.push("T-shirts");
+    if (jacketFilter.checked == true) filterQuery.push("jackets");
+    if (trouserFilter.checked == true) filterQuery.push("pants");
+    if (shortsFilter.checked == true) filterQuery.push("shorts");
+    if (menkurtas.checked == true) filterQuery.push("kurtas");
+    if (jeans.checked == true) filterQuery.push("jeans");
+
+
+    filterQuery.map((elem) => {
+        queryURL = queryURL + elem + ",";
+    });
+    queryURL = queryURL.slice(0, -1);
+    queryURL += "]";
+
+    filteredData(queryURL);
+}
+
+async function filteredData(queryURL) {
+    let res = await fetch(queryURL);
+    let data = await res.json();
+    data = data.products;
+    console.log(data);
+    displayproduct(data);
+}
+
+let button = document
+    .getElementById("filterButton")
+    .addEventListener("click", filterProducts);
+
+
+</script>
 
     
 </body>

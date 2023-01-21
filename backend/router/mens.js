@@ -17,6 +17,17 @@ MensRouter.get("/men", async (req, res) => {
     }
   });
 
+  MensRouter.get("/filter", async (req, res) => {
+    try {
+      let query = req.query.items;
+     let filter = query.replace(/\[|\]/g, "").split(",")
+      let products = await MensModel.find({ category: { $in: filter} });
+      return res.status(200).send({ products: products });
+    } catch (err) {
+      return res.status(500).send({ message: err.message });
+    }
+  });
+
 
 
 

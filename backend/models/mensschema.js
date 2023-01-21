@@ -1,12 +1,15 @@
 const mongoose = require("mongoose");
 
 const MensSchema = new mongoose.Schema({
-  name: String,
-  strike_price:String,
-  price: Number,
-  rating:Number,
-  no_of_products:Number,
-  thumbnail:String,
+  imageURL:String,
+  brand: String,
+  product:String,
+  gender: String,
+  category:String,
+  price:String,
+  strikedOffPrice:Number,
+  createdAt:String,
+  updatedAt:String,
   
   
 });

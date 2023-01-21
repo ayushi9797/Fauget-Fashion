@@ -97,6 +97,16 @@ function sort_by_price(){
 
 //FILTERRR
 
+document.querySelector(".search-div").addEventListener("input",()=>{
+  let filter=document.filteruerySelector(".search-div").value;
+  console.log(filter)
+  let filterdata=bag.filter((elem)=>{
+      return elem.name.toLowerCase().includes(filter.toLowerCase());
+
+  })
+  renderData(filterdata);
+})
+
 
 
 

@@ -4,3 +4,5 @@ import {footer} from "../components/footer.js"
 
 const footerdiv=document.querySelector(".footer");
 footerdiv.innerHTML = footer()
+
+
