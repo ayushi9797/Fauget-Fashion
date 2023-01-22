@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css//home.css">
+    <link rel="icon"
+    href="https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/ec/95/cf/ec95cf46-eafc-e543-a9a2-98cbfe48bccb/AppIcon-0-0-1x_U007emarketing-0-0-0-9-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1024x1024bb.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f214957bb7.js" crossorigin="anonymous"></script>
+
+<style>
+    body{
+        background-color: rgb(255, 230, 234);
+    }
+   
+
+
+#product_main_container {
+    
+    display:flex;
+    width:80%;
+    margin-top: 5%;
+    }
+.detail_left {
+    /* border: 1px solid red; */
+    width: 100%;
+    }
+.detail_left img{
+    width:26%;
+    /* border: 1px solid red; */
+}
+h4 {
+text-align: center;
+margin-top:-4%;
+color:rgb(238, 59, 89);
+margin-left: 20%;
+}
+h3 {
+    margin-top:2%;
+}
+.detail_left div {
+    border: 1px solid rgb(245, 61, 61);
+    width: 50%;
+    justify-content: space-around;
+    text-align:right;
+    height:20px;
+    margin-top: -4%;
+    font-size:18px;
+}
+
+.product_right_container {
+    /* border: 1px solid rgb(110, 110, 6); */
+    width:30%;
+    margin-left:20%;
+    }    
+.orderdetails {
+        font-size:23px;
+        font-weight:bold;
+    }
+#bag {
+    display: flex;
+    justify-content:space-between;
+}
+.bag_total {
+    color: rgb(240, 31, 31);
+    font-size:20px;
+}
+.bag_total_price {
+    font-size:20px;
+    margin-top: -5%;
+}
+.deliv {
+    color: rgb(88, 84, 84);
+    font-size:20px;
+    margin-top: -2%;
+}
+.total {
+    font-size:20px;
+    margin-top: 6%;
+}
+.totalamount {
+    font-size:20px;
+}
+
+.shipping_btn {
+    width:100%;
+    height:50px;
+    margin: auto;
+    background-color: hotpink;
+    border: 1px solid pink;
+    color:white;
+    letter-spacing:2px;
+    cursor: pointer;
+}
+.shipping_btn:hover{
+  outline: 1px solid;
+  border: 3px solid rgb(233, 14, 50);
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom_icons {
+    display: flex;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: 23%;
+    /* border: 3px solid #5a5a55; */
+}
+.exchange_icons {
+    /* border:1px solid red; */
+    width: 100%;
+    margin: auto;
+}
+.exchange_icons img {
+    width:20%;
+}
+
+
+/* NAVBAR design */
+
+
+    
+    
+    
+    
+    #ru{
+        font-size: 12px;
+        color:rgb(106,106,106);
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    #navbar-image{
+        height:100px;
+        width:100%;
+        border:1px solid transparent;
+        margin-top: 10px;
+        
+    }
+    #navbar-img{
+        height:100%;
+        width:100%;
+    }
+    #bar-img{
+        height:100%;
+        width:4%;
+        cursor: pointer;
+        background-color: rgb(47,66,84);
+        color: white;
+    }
+
+
+
+    /* FOOTER Design */
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+#first-right {
+    height: 100%;
+    width: 25%;
+    /* font-size: 11px; */
+    color: rgb(104, 101, 101);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+}
+
+.right>p {
+    font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: gray;
+}
+
+#bottom-footer{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(44, 65, 82);
+    justify-content: space-between;
+    display: flex;
+    
+}
+#main{
+    /* font-size: 14px; */
+
+    width: 40%;
+    margin-left: 110px;
+    margin-top: 30px;
+    color: rgb(255,255,255);
+    
+}
+
+#btm-left{
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+#btm-right{
+    margin-top: 32px;
+    color: rgb(255,255,255);
+    margin-right: 110px;
+}
+#f-btns{
+    display: grid;
+    text-align: center;
+   margin-top: 18px;
+    height: 110px;
+    width: 55px;
+    margin-right: 45px;
+    grid-gap: 5px;
+
+}
+
+.product_left_container
+{
+    height: 450px;
+    overflow-y: scroll;
+}
+h2{
+    color: red;
+    margin-top: 7%;
+    font-style: italic;
+
+}
+
+     /* footer */
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+
+  background-color: #eee;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777777;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(134, 134, 134, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #24262b;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.footer-promise {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-promise img {
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+}
+p {
+  color: grey;
+}
+/* *responsive*/ 
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+.image-first-line .image-second-line {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+  }
+  
+}
+
+
+
+</style>    
+
+
+</head>
+<body>
+
+    <!-- NAVBAR content -->
+    <main>
+        <i class="fa-solid fa-bars" onclick="menuhome()"></i>
+        <div  id="dropdown" class="header sticky">
+            
+            <div class=logo>
+
+                <a href="index.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="categories">
+                <ul>
+                    <li class="dropdown-content1 dropdown-content">
+                        <a href="mens.html">Men</a>
+
+                    </li>
+                    <li class="dropdown-content2 dropdown-content">
+                        <a href="products.html">Women</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="kids.html">Kids</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="beauty.html">Beauty</a>
+                    </li>
+
+
+                    <li class="dropdown-content5 dropdown-content">
+                        <a href="studio.html">Studio</a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <!-- Search Div -->
+            <div class="search-div">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search for products" />
+            </div>
+
+            <div class="nav-last">
+                <div>
+                    <a href="signup.html">
+                        <img id="svg" src="https://www.svgrepo.com/show/198180/user-profile.svg" alt="" />
+                    </a>
+
+                    <div>Profile</div>
+                </div>
+
+                <div>
+                    <a href="add_to_cart.html">
+                        <img id="svg" src="https://www.svgrepo.com/show/17522/bag.svg" alt="" />
+                    </a>
+
+                    <div>Bag</div>
+                </div>
+
+                <!-- <div>
+                    <a href="">
+                        <img id="svg" src="https://www.svgrepo.com/show/14970/heart.svg" alt="" />
+                    </a>
+
+                    <div>Wishlist</div>
+                </div> -->
+
+                
+                <div>
+                    <a href="payment.html">
+                        <img id="svg" src="https://image.shutterstock.com/image-vector/credit-cards-payment-icon-vector-260nw-295310129.jpg" alt="" />
+                    </a>
+
+                    <div>payment</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- <div class="reliance_img"><img src="https://assets.ajio.com/medias/sys_master/images/images/h3c/h94/46844004237342/17082021-M-cartpagebanner-relianceone.jpg"></div> -->
+    <h2>WELCOME  CONFIRM YOUR ORDER</h2>
+
+
+<div id="product_main_container">
+ 
+    <div class="product_left_container">
+
+       <div class="detail_left">
+         
+       </div>
+
+    </div>
+
+
+    <div class="product_right_container">
+
+        <div class="orderdetails">Order Details</div><br>
+
+        <div id="bag">
+            <div class="bag_total">Bag Total</div>
+            <div class="bag_total_price"></div>
+        </div><br>
+
+        <div id="bag">
+            <div class="deliv">Delivery</div>
+            <div>FREE</div>
+        </div><br>
+        
+        <div id="bag">
+            <div class="total">Total Amount</div>
+            <div class="totalamount"></div>
+        </div><br>
+
+        <a href="./address.html"><button class="shipping_btn">PROCEED TO SHIPPING</button></a>
+
+    </div>
+
+</div> <br> <br><br>
+
+
+
+
+ <!-- FOOTER CONTENT -->
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>online shopping</h4>
+                <ul>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">gift cards</a></li>
+                    <li>
+                        <a href="#">myntra insider <span>New</span> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>useful links</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">track order</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>experience myntra app on mobile</h4>
+                <a href=""><img
+                        src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt="" /></a>
+                <a href=""><img
+                        src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt="" /></a>
+                <h4>keep in touch</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+<!-- <hr /> -->
+
+
+
+</body>
+</html>
+
+
+<script>
+
+var finalcart = JSON.parse(localStorage.getItem("Allcartproduct"));
+
+finalcart.map(function (item) {
+
+    var product_main_container = document.createElement("div");
+
+    var product_left_container = document.createElement("div");
+
+    var detail_left = document.createElement("div");
+
+    var product_image = document.createElement("img");
+    product_image.setAttribute("src",item.imageURL);
+
+    var price1 = document.createElement("h3");
+    price1.textContent = "Rs." + " " + item.price;
+
+    var product1 = document.createElement("h4");
+    product1.textContent = item.product;
+
+
+    document.querySelector(".detail_left").append(product_image, product1, price1);
+    document.querySelector(".product_left_container").append(detail_left);
+    document.querySelector("#product_main_container").append(product_left_container);
+
+})
+
+
+
+var finalprice = finalcart.reduce(function(acc, cv) {
+    var x = Number(cv.price);
+    return acc+x;
+}, 0);
+
+
+var bagtotal = document.createElement("p");
+bagtotal.textContent = "₹" + finalprice;
+
+var totalamount = document.createElement("p");
+totalamount.textContent = "₹" + finalprice;
+
+document.querySelector(".bag_total_price").append(bagtotal);
+document.querySelector(".totalamount").append(totalamount);
+
+
+</script>

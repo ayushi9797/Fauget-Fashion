@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/278cf368e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="/styles/formStyles.css" />
+
+    <title>Enter Address</title>
+  </head>
+
+  <style>
+    body {
+  font-family: sans-serif;
+  margin-top: 0%;
+  margin: 0;
+}
+
+body{
+        background-color: rgb(255, 230, 234);
+    }
+
+.mainAddress {
+  margin-top: 12%;
+}
+.addressForm {
+  
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  
+}
+.addressForm > input {
+  border: 1px solid gray;
+  border-radius: 0;
+  width: 90%;
+  font-size: 15px;
+  padding: 10px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+}
+.addressForm > #submit {
+  margin-top: 20px;
+  height: 3em;
+  background-color: hotpink;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  color: rgb(248, 212, 212);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+}
+
+.addressForm > #submit:hover {
+  background-color:rgb(245, 117, 139);
+  border: 2px solid black;
+}
+
+.addressForm > input:focus {
+  border-color: pink;
+}
+h1{
+    color: red;
+    margin-top: 10%;
+}
+p{
+    color: rgb(216, 33, 63);
+    font-style: italic;
+    margin-top: 8%;
+}
+ /* footer */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+
+  background-color: #eee;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777777;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(134, 134, 134, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #24262b;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.footer-promise {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-promise img {
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+}
+p {
+  color: grey;
+}
+/* *responsive*/ 
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+.image-first-line .image-second-line {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+  }
+  
+}
+
+
+  </style>
+
+  <body>
+    <main>
+        <i class="fa-solid fa-bars" onclick="menuhome()"></i>
+        <div  id="dropdown" class="header sticky">
+            
+            <div class=logo>
+
+                <a href="./index.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="categories">
+                <ul>
+                    <li class="dropdown-content1 dropdown-content">
+                        <a href="mens.html">Men</a>
+
+                    </li>
+                    <li class="dropdown-content2 dropdown-content">
+                        <a href="products.html">Women</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="kids.html">Kids</a>
+                    </li>
+                    <li class="dropdown-content3 dropdown-content">
+                        <a href="beauty.html">Beauty</a>
+                    </li>
+
+
+                    <li class="dropdown-content5 dropdown-content">
+                        <a href="studio.html">Studio</a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <!-- Search Div -->
+            <div class="search-div">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search for products" />
+            </div>
+
+            <div class="nav-last">
+                <div>
+                    <a href="signup.html">
+                        <img id="svg" src="https://www.svgrepo.com/show/198180/user-profile.svg" alt="" />
+                    </a>
+
+                    <div>Profile</div>
+                </div>
+
+                <div>
+                    <a href="add_to_cart.html">
+                        <img id="svg" src="https://www.svgrepo.com/show/17522/bag.svg" alt="" />
+                    </a>
+
+                    <div>Bag</div>
+                </div>
+
+                <!-- <div>
+                    <a href="">
+                        <img id="svg" src="https://www.svgrepo.com/show/14970/heart.svg" alt="" />
+                    </a>
+
+                    <div>Wishlist</div>
+                </div> -->
+
+                
+                <div>
+                    <a href="payment.html">
+                        <img id="svg" src="https://image.shutterstock.com/image-vector/credit-cards-payment-icon-vector-260nw-295310129.jpg" alt="" />
+                    </a>
+
+                    <div>payment</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- ..............................................................................................  -->
+    <div class="mainAddress">
+      <form class="addressForm">
+        <h1 style="text-align: center">ENTER YOUR ADDRESS PLEASE</h1>
+        <p>Street Address</p>
+        <input
+          type="text"
+          class="name"
+          placeholder="Enter your street address"
+        />
+        <p>City</p>
+        <input type="text" class="cardNumber" placeholder="Enter your city" />
+        <p>State</p>
+        <input type="text" class="CVV" placeholder="Enter your state" />
+        <p>Country</p>
+        <input type="text" class="expDate" placeholder="Enter Country" />
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+    <!-- ................................................................................................. -->
+    
+  </body>
+</html>
+
+
+<script>
+
+ 
+
+  // ...............................................................................................
+
+  document.querySelector("form").addEventListener("submit", redirectToPayment);
+  function redirectToPayment(event) {
+    event.preventDefault();
+
+    var streetAddress = document.querySelector(".name").value;
+    var city = document.querySelector(".cardNumber").value;
+    var state = document.querySelector(".CVV").value;
+    var country = document.querySelector(".expDate").value;
+
+    if (streetAddress == "" || city == "" || state == "" || country == "") {
+      alert("Please fill all address fields");
+    } else {
+      alert("Address entered");
+      window.location.href = "./payment.html";
+    }
+  }
+</script>

@@ -76,7 +76,7 @@ const registeration_form = document.querySelector(".sign-up-form");
                 console.log(data);
                 localStorage.setItem('Token', data.token)
                 alert(`successfully logged in`)
-                window.location.href = './homepage.html'
+                window.location.href = './index.html'
             }).catch((error)=>{
                 console.log({'error':error});
             })

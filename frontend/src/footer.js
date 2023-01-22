@@ -28,7 +28,7 @@ export const footer = ()=>{
             </div>
 
             <div class="footer-col">
-                <h4>experience myntra app on mobile</h4>
+                <h4>experienceFauget app on mobile</h4>
                 <a href=""><img
                         src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
                         alt="" /></a>
@@ -49,26 +49,26 @@ export const footer = ()=>{
     <!-- 2nd footer bottom section -->
     <div id="footer2">
         <div class="onlineshopping">
-            <h4>MEN’S SHOPPING AT MYNTRA: A SUPERIOR EXPERIENCE</h4>
+            <h4>MEN’S SHOPPING ATFauget: A SUPERIOR EXPERIENCE</h4>
             <p>
-                Myntra is one of the best sites when it comes to online shopping for
+               Fauget is one of the best sites when it comes to online shopping for
                 men. The finest of material, superior design and unbeatable style go
                 into the making of our men’s shopping collection. Our range of
                 online shopping men’s wear, accessories, footwear and personal care
                 products are second to none. Compared with other men’s shopping
-                sites, Myntra brings you the best price products which won’t hurt
+                sites,Fauget brings you the best price products which won’t hurt
                 your pocket. With seasonal discounts on trendy casual wear, suits,
-                blazers, sneakers and more, online shopping for men at Myntra just
+                blazers, sneakers and more, online shopping for men atFauget just
                 gets even more irresistible!
             </p>
         </div>
         <div class="online-shopping">
             <p>
-                At Myntra, our online shopping fashion for men collection features
+                AtFauget, our online shopping fashion for men collection features
                 plenty of options to create multiple outfits. At our men’s online
                 shop we have brought together an exhaustive range of products from
                 the best men’s brands. Here is a list of must-haves from the wide
-                variety of awesome products at Myntra:
+                variety of awesome products atFauget:
             </p>
             <br />
 
@@ -115,27 +115,27 @@ export const footer = ()=>{
             <br />
         </div>
         <div class="mens-shopping">
-            <h4>MEN’S SHOPPING MADE EASY AT MYNTRA</h4>
+            <h4>MEN’S SHOPPING MADE EASY ATFauget</h4>
 
             <p>
-                Myntra is the most convenient men’s online store, what with our
+               Fauget is the most convenient men’s online store, what with our
                 simplified shopping and payment procedures. With just a few clicks
                 of the mouse or taps on your smartphone, you can buy your favorites
                 from the best men’s brands right away.
             </p>
         </div>
         <div class="online-shopping">
-            <h4 margin-top="25%">HISTORY OF MYNTRA</h4>
+            <h4 margin-top="25%">HISTORY OFFauget</h4>
             <p>Becoming India’s no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements
-                and a team of dedicated personnel with an equally loyal customer base have made Myntra the online
+                and a team of dedicated personnel with an equally loyal customer base have madeFauget the online
                 platform that it is today. The original B2B venture for personalized gifts was conceived in 2007 but
-                transitioned into a full-fledged ecommerce giant within a span of just a few years. By 2012, Myntra
+                transitioned into a full-fledged ecommerce giant within a span of just a few years. By 2012,Fauget
                 had introduced 350 Indian and international brands to its platform, and this has only grown in
-                number each passing year. Today Myntra sits on top of the online fashion game with an astounding
+                number each passing year. TodayFauget sits on top of the online fashion game with an astounding
                 social media following, a loyalty program dedicated to its customers, and tempting,
                 hard-to-say-no-to deals.
 
-                The Myntra shopping app came into existence in the year 2015 to further encourage customers’
+                TheFauget shopping app came into existence in the year 2015 to further encourage customers’
                 shopping sprees. Download the app on your Android or IOS device this very minute to experience
                 fashion like never before</p>
         </div>
