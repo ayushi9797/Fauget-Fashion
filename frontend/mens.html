@@ -18,7 +18,7 @@
         <div          class="header sticky">
             <div class=logo>
 
-                <a href="homepage.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                <a href="index.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
                         alt="logo" /></a>
             </div>
             <div class="categories">
@@ -175,10 +175,16 @@
     </div>
 </div>
 
+<div class="footer">
+
+</div>
+
+
 </body>
 
 </html>
-<!-- <script src="./assets/womenData.js"></script> -->
+<script src="./src/index.js" type="module"></script>
+
 <script>
 let maleproducts = []
 let url = "http://localhost:4500/mens/men"
@@ -240,13 +246,40 @@ function displayproduct(data) {
 
        
 
-        // photo.addEventListener("click", function () {
-        //     addToCart(elem);
-        // });
+        photo.addEventListener("click", function () {
+            addToCart(elem);
+        });
+
+        
+
+        
     })
 
 
+
 }
+
+var x = JSON.parse(localStorage.getItem("Ayushicart"));
+    if (x == null) {
+       cartarr= [];
+    } else {
+        var cartarr = JSON.parse(localStorage.getItem("Ayushicart"));
+    }
+
+    // On Click function
+    function addToCart(item) {
+        if (cartarr.length == 1) {
+            cartarr.pop();
+        }
+        cartarr.push(item);
+
+        localStorage.setItem("Ayushicart", JSON.stringify(cartarr));
+
+        window.location.href = "clicked.html";
+    }
+
+
+
 let sort = document.getElementById("sort-products-option")
 console.log(sort);
 sort.addEventListener("change", SORT)

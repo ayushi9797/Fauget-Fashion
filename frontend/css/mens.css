@@ -120,8 +120,8 @@ body {
 #filterButton {
   margin-top: 1rem;
   padding: 8px 60px;
-  background-color: rgb(240, 26, 62);
-  border: 2px solid rgb(228, 27, 61);
+  background-color: rgb(226, 72, 98);
+  border: 2px solid rgb(247, 55, 87);
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -130,7 +130,7 @@ body {
 
 #filterButton:hover {
   background-color: white;
-  border: 2px solid hotpink;
+  border: 2px solid black;
   color: black;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .product-brand {
-  color: rgb(182, 15, 43);
+  color: rgb(239, 23, 59);
   font-weight: bold;
   text-align: center;
   padding: 25px 0 0 0;
@@ -167,20 +167,22 @@ body {
 .price,
 .striked-price,
 .offer {
-  margin: 2px;
+
+  margin-top: 15px;
 }
 
 .price {
+
   font-weight: bold;
 }
 
 .striked-price {
   text-decoration: line-through;
-  color: rgb(242, 207, 213);
+  color: pink;
 }
 
 .offer {
-  color: rgb(245, 103, 126);
+  color: pink;
 }
 
 .product-img {
