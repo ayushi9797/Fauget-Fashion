@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://kit.fontawesome.com/f214957bb7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"); */
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #words {
+        color: rgb(168, 164, 164);
+        display: flex;
+        gap: 2%;
+        font-size:20px;
+      }
+
+      
+
+      #main_container {
+        display: flex;
+        color: rgb(241, 148, 163);
+
+        height: 500px;
+        margin-top: 9%;
+      }
+
+      .left_container {
+        /* border: 1px solid red; */
+        width: 50%;
+      }
+      .left_container img {
+        width: 50%;
+        margin-left: 23%;
+        border-radius: 2rem;
+      }
+      .right_container {
+        width: 50%;
+        /* border: 1px solid black; */
+        margin: 3%;
+        margin-right: 5%;
+      }
+
+      .right_content {
+        text-align: center;
+        color: black;
+        /* border: 1px solid black; */
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
+        /* text-transform: capitalize; */
+      }
+
+      #brand {
+        color: purple;
+        
+      }
+
+      #main_box {
+        width: 70%;
+        text-align: left;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 1%;
+      }
+
+      .main_box1 {
+        border: 1px solid rgb(252, 205, 213);
+        width: 50%;
+        margin: auto;
+        
+      }
+
+      .main_box2 {
+        border: 1px solid pink;
+        width: 50%;
+        margin: auto;
+        margin-top: -0.2%;
+        color:purple;
+      }
+      .more {
+        color:purple;
+        font-size: 15px;
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 3%;
+
+      }
+      .more > p {
+        color: red;
+      }
+
+      .location {
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .button {
+        width: 30%;
+        margin: auto;
+      }
+
+      .btn1 {
+        width: 90%;
+        height: 50px;
+        margin: auto;
+        background-color: rgb(237, 29, 64);
+        border: 1px solid hotpink;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        font-style: italic;
+        margin-top: 4%;
+
+      }
+
+      .btn1:hover,
+      .btn2:hover {
+        outline: 1px solid transparent;
+        border: 3px solid hotpink;
+        transition: all 0.2s ease-in-out;
+      }
+
+      
+
+      h6 {
+        color: hotpink;
+        text-align: center;
+      }
+      div .brand1 {
+        font-size:20px;
+      }
+
+      .sizes {
+        display: flex;
+        color: rgb(226, 57, 85);
+        width: 40%;
+        margin: auto;
+        justify-content: space-between;
+        height: 22px;
+      }
+
+      .size_small {
+        background-color: rgb(234, 105, 127);
+        width: 8%;
+        border-radius: 50%;
+        color: white;
+        padding-left: 4%;
+      }
+      
+      h3 {
+        margin-top: 2%;
+        color:rgb(230, 22, 57);
+      }
+
+
+
+ 
+   
+    #bar-img{
+        height:100%;
+        width:4%;
+        cursor: pointer;
+        background-color: hotpink;
+        color: white;
+    }
+       h5 {
+        /* margin-top: 2%; */
+      color: rgb(230, 82, 106);
+      /* margin-top: -3%;/ */
+        margin-top: 3%;
+
+
+    }
+
+
+
+/* FOOTER Design */
+     /* footer */
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+
+  background-color: #eee;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777777;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(134, 134, 134, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #24262b;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.footer-promise {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-promise img {
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+}
+p {
+  color: grey;
+}
+/* *responsive*/ 
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+.image-first-line .image-second-line {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+<!-- NAVBAR content -->
+
+<main>
+    <i class="fa-solid fa-bars" onclick="menuhome()"></i>
+    <div  id="dropdown" class="header sticky">
+        
+        <div class=logo>
+
+            <a href="index.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                    alt="logo" /></a>
+        </div>
+        <div class="categories">
+            <ul>
+                <li class="dropdown-content1 dropdown-content">
+                    <a href="mens.html">Men</a>
+
+                </li>
+                <li class="dropdown-content2 dropdown-content">
+                    <a href="products.html">Women</a>
+                </li>
+                <li class="dropdown-content3 dropdown-content">
+                    <a href="kids.html">Kids</a>
+                </li>
+                <li class="dropdown-content3 dropdown-content">
+                    <a href="beauty.html">Beauty</a>
+                </li>
+
+
+                <li class="dropdown-content5 dropdown-content">
+                    <a href="studio.html">Studio</a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <!-- Search Div -->
+        <div class="search-div">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" placeholder="Search for products" />
+        </div>
+
+        <div class="nav-last">
+            <div>
+                <a href="signup.html">
+                    <img id="svg" src="https://www.svgrepo.com/show/198180/user-profile.svg" alt="" />
+                </a>
+
+                <div>Profile</div>
+            </div>
+
+            <div>
+                <a href="add_to_cart.html">
+                    <img id="svg" src="https://www.svgrepo.com/show/17522/bag.svg" alt="" />
+                </a>
+
+                <div>Bag</div>
+            </div>
+
+            <!-- <div>
+                <a href="">
+                    <img id="svg" src="https://www.svgrepo.com/show/14970/heart.svg" alt="" />
+                </a>
+
+                <div>Wishlist</div>
+            </div> -->
+
+            
+            <div>
+                <a href="payment.html">
+                    <img id="svg" src="https://image.shutterstock.com/image-vector/credit-cards-payment-icon-vector-260nw-295310129.jpg" alt="" />
+                </a>
+
+                <div>payment</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div id="main_container">
+      <div class="left_container">
+        <div class="main_image"><img src="" alt="" /></div>
+      </div>
+
+      <div class="right_container">
+        <div class="right_content"></div>
+
+        <div id="main_box">
+          <p class="main_box1">Get it for ₹ 2499</p>
+          <p class="main_box2">
+            Get Up To Extra 30% Off on ₹1490 On Your First Purchase. Max
+            Discount Rs. 2000
+          </p>
+        </div><br>
+
+        <div class="more">
+          +7 More
+          <p>Select Size</p>
+        </div>
+
+      
+        <div class="sizes">
+          <div class="size_small">S</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
+          <div>XXL</div>
+        </div><br>
+
+        <div class="button">
+          <div class="location">
+            <p>Select your size to know your estimated delivery date.</p>
+          </div>
+
+          <button class="btn1">ADD TO BAG</button>
+          <h6>HANDPICKED STYLES | ASSURED QUALITY</h6>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- FOOTER CONTENT -->
+
+    <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>online shopping</h4>
+                <ul>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">gift cards</a></li>
+                    <li>
+                        <a href="#">myntra insider <span>New</span> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>useful links</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">track order</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>experience myntra app on mobile</h4>
+                <a href=""><img
+                        src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt="" /></a>
+                <a href=""><img
+                        src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt="" /></a>
+                <h4>keep in touch</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  var y = JSON.parse(localStorage.getItem("Allcartproduct"));
+  if(y==null){
+        ArrOfAllCartproduct=[];
+    }
+    else{
+        var ArrOfAllCartproduct=JSON.parse(localStorage.getItem("Allcartproduct"));
+}
+  // var cartItemArr = [];
+
+
+
+var cartItemArr = JSON.parse(localStorage.getItem("Ayushicart"));
+
+cartItemArr.map(function (item) {
+    document
+      .querySelector(".main_image>img")
+      .setAttribute("src", cartItemArr[0].imageURL);
+
+
+    var brand1 = document.createElement("h3");
+    brand1.textContent = item.brand;
+
+    var category1 = document.createElement("div");
+    category1.textContent = item.category;
+
+    var gender1 = document.createElement("div");
+    gender1.textContent = item.gender;
+
+    var product1 = document.createElement("h3");
+    product1.textContent = item.product;
+
+    var price1 = document.createElement("h2");
+    price1.textContent = "₹"+ item.price;
+
+    var strikedOffPrice1 = document.createElement("h4");
+    strikedOffPrice1.textContent = "MRP" + " " + "₹" + item.strikedOffPrice;
+  
+  var priceincl = document.createElement("h5");
+    priceincl.textContent = "Price inclusive of all taxes";
+
+
+    document
+      .querySelector(".right_content")
+      .append(brand1, category1, gender1, price1);
+
+
+
+
+  document.querySelector(".btn1").addEventListener("click", function () {
+    alert("Added to cart");
+    addToCart(item);
+   window.location.href = "./add_to_cart.html";
+  });
+});
+
+
+function addToCart(item) {
+  ArrOfAllCartproduct.push(item);
+  localStorage.setItem("Allcartproduct", JSON.stringify(ArrOfAllCartproduct));
+  
+}
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,16 @@
+/*  */
+
+
+
+
+@media (max-width: 1024px) {
+ 
+  
+    .image-first-line {
+      margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  }
+
+  

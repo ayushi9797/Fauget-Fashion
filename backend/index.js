@@ -7,9 +7,12 @@ const jwt = require("jsonwebtoken");
 const { connections } = require("./config/config");
 const { UserModel } = require("./models/model");
 
+
 const { UserRouter } = require("./router/userroute");
 const { LoginRouter } = require("./router/login");
 const { authenticate } = require("./middleware/authentication_middleware");
+
+
 const { WomenRouter } = require("./router/product");
 const{ MensRouter} = require("./router/mens");
 const { BeautyRouter } = require("./router/beauty");
@@ -20,7 +23,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/user", UserRouter);
 app.use("/user", LoginRouter);
+
 app.use(authenticate);
+
+
 app.use("/product",WomenRouter)
 app.use("/mens", MensRouter,)
 app.use("/Makeup",BeautyRouter)
