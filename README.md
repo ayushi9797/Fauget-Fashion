@@ -91,4 +91,19 @@ Functionality
  # Payment Page
   ![image](https://user-images.githubusercontent.com/112810259/233774933-de5ad540-6d6c-4a5b-ae1a-f34d638378f2.png)
    
+# Womens Page
+![image](https://user-images.githubusercontent.com/112810259/233775106-95e86510-59b1-4738-be2b-2cdd59326b49.png)
 
+ # Kids page
+ ![image](https://user-images.githubusercontent.com/112810259/233775121-cb6a583f-79c1-4278-8fab-cb4cd0876eb4.png)
+ 
+ # Beauty page
+ ![image](https://user-images.githubusercontent.com/112810259/233775142-04f1bff4-802f-4a9a-9f93-1cfb71ab347f.png)
+ 
+ # Studio Page
+ ![image](https://user-images.githubusercontent.com/112810259/233775172-0a006cf6-1678-4b14-82ab-ee68e10c9b0c.png)
+ 
+#Admin Page
+![image](https://user-images.githubusercontent.com/112810259/233775210-92dfc3c4-c6e1-44a2-86eb-80c42433684d.png)
+
+THANKS FOR VISITING ❤️❤️❤️❤️❤️❤️
