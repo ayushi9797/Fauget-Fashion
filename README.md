@@ -18,3 +18,32 @@ Faucet Fashion is an e-commerce store for fashion and lifestyle products.
 
 ``` https://lively-blini-b17740.netlify.app/ ```
 
+
+# REQUIREMENTS 
+  - User can login and sign up with authentication token
+  - User can visit severals pages 
+  - User can able to get all the information about products and services
+  - User can purchases the products 
+  - user can pay for the purchase
+  
+  ## TECH STACKS
+   # Frontend
+    >HTML
+    >CSS
+    >JAVASCRIPT
+    >BOOTSTRAP
+    >JQUERY
+
+
+     # Backend
+    >NODEJS
+    >EXPRESSJS
+    >MONGOOSE
+    >JSONWEBTOKEN
+    >BCRYPT
+    >CORS
+
+
+     # Database 
+    - Mongodb Database
+
