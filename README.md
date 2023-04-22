@@ -28,32 +28,36 @@ Faucet Fashion is an e-commerce store for fashion and lifestyle products.
   
   ## TECH STACKS
    # Frontend
-    >HTML
-    >CSS
-    >JAVASCRIPT
-    >BOOTSTRAP
-    >JQUERY
+    HTML
+    CSS
+    JAVASCRIPT
+    BOOTSTRAP
+    JQUERY
 
 
-     # Backend
-    >NODEJS
-    >EXPRESSJS
-    >MONGOOSE
-    >JSONWEBTOKEN
-    >BCRYPT
-    >CORS
+  # Backend
+    NODEJS
+    EXPRESSJS
+    MONGOOSE
+    JSONWEBTOKEN
+    BCRYPT
+    CORS
 
 
-     # Database 
+  # Database 
     - Mongodb Database
+    
+  ![image](https://user-images.githubusercontent.com/112810259/233774360-3d043242-ea13-457c-9cc5-8a2cec999f80.png)
+
     
  ## Register
 
 ```http://localhost:4500/register``
 
-### Login 
+
+## Login 
 ```http://localhost:4500/login``   
     
-    ![image](https://user-images.githubusercontent.com/112810259/233774360-3d043242-ea13-457c-9cc5-8a2cec999f80.png)
-
+    
+       
 
