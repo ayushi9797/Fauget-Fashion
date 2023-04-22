@@ -78,8 +78,12 @@ Faucet Fashion is an e-commerce store for fashion and lifestyle products.
     
  
 ## Mens Page 
-```http://localhost:4500/mens/men``
+
+
 ![image](https://user-images.githubusercontent.com/112810259/233774808-0f69a642-b1ff-46b8-aa5c-e48b93dae37c.png)
+
+```http://localhost:4500/mens/men```
+
 Functionality
 - Sorting 
 - Filter
@@ -93,16 +97,21 @@ Functionality
   ![image](https://user-images.githubusercontent.com/112810259/233774933-de5ad540-6d6c-4a5b-ae1a-f34d638378f2.png)
    
 # Womens Page
+Functionality
+- Sorting 
+- Filter
 ```http://localhost:4500/product/Women```
 
 ![image](https://user-images.githubusercontent.com/112810259/233775106-95e86510-59b1-4738-be2b-2cdd59326b49.png)
 
  # Kids page
+ 
  ```http://localhost:4500/Kids/kid```
  
  ![image](https://user-images.githubusercontent.com/112810259/233775121-cb6a583f-79c1-4278-8fab-cb4cd0876eb4.png)
  
  # Beauty page
+ 
  ```http://localhost:4500/Makeup/beauty```
  
  ![image](https://user-images.githubusercontent.com/112810259/233775142-04f1bff4-802f-4a9a-9f93-1cfb71ab347f.png)
