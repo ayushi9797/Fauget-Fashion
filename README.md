@@ -70,8 +70,21 @@ Faucet Fashion is an e-commerce store for fashion and lifestyle products.
   
   
   
+    ![image](https://user-images.githubusercontent.com/112810259/233774885-7d0334b0-7012-4b15-9cf3-175a1430ca22.png)
     
+    # Payment Page
+    ![image](https://user-images.githubusercontent.com/112810259/233774933-de5ad540-6d6c-4a5b-ae1a-f34d638378f2.png)
     ![Screenshot (21)](https://user-images.githubusercontent.com/112810259/233774663-bdace9ae-93f6-454e-ab81-13ffedba8d9d.png)
+## Mens Page 
+![image](https://user-images.githubusercontent.com/112810259/233774808-0f69a642-b1ff-46b8-aa5c-e48b93dae37c.png)
+Functionality
+- Sorting 
+- Filter
 
-       
+# Add to cart
+![image](https://user-images.githubusercontent.com/112810259/233774853-a4d62468-86ca-4857-bcdd-8eaf308640b4.png)
+![Uploading image.png…]()
+
+# Payment Page
+![Uploading image.png…]()
 
