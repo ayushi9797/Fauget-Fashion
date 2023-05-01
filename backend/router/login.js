@@ -9,29 +9,33 @@ const LoginRouter = express.Router();
 
 app.use(express.json());
 
-
-
 //!login ********
 //check the password
 
 LoginRouter.post("/login", async (req, res) => {
-    const { email, password } = req.body;
+  const { email, password } = req.body;
 
-    try {
-      const user = await UserModel.find({ email });
-      console.log(user)
+  try {
+    const user = await UserModel.find({ email });
+    if (user.length === 0) {
+      res.status(404).send("user not found");
+    } else {
+      console.log(user);
       const hashed_pass = user[0].password;
-      console.log(password,hashed_pass)
+      console.log(password, hashed_pass);
 
-  
       if (user.length > 0) {
         bcrypt.hash(password, hashed_pass, (err, result) => {
           console.log(result);
           if (result) {
             const token = jwt.sign({ userID: user[0]._id }, "masai");
 
-            res.send({ "msg": "login successfully", "token": token, email:user[0].email,name:user[0].fullname });
-
+            res.send({
+              message: "login successfully",
+              token: token,
+              email: user[0].email,
+              name: user[0].fullname,
+            });
           } else {
             res.send("wrong cred");
           }
@@ -39,17 +43,14 @@ LoginRouter.post("/login", async (req, res) => {
       } else {
         res.send("wrong credentialss");
       }
-    } catch (err) {
-
-      console.log({ err: err.message });
-
-      res.send({ "msg": "error crede in login" });
     }
-  });
+  } catch (err) {
+    console.log({ err: err.message });
 
+    res.send({ msg: "error crede in login" });
+  }
+});
 
-  module.exports = {
-    LoginRouter,
-  };
-  
-  
+module.exports = {
+  LoginRouter,
+};
