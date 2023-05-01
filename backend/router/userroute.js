@@ -15,33 +15,36 @@ UserRouter.get("/", (req, res) => {
 
 //! ***** REGISTER
 
-
-
-UserRouter.post('/register', (req, res) => {
+UserRouter.post("/register", async (req, res) => {
   let { fullname, email, gender, password, phone } = req.body;
   console.log(req.body);
-
-  try {
-    bcrypt.hash(password, 5, async (err, secure_password) => {
-      if (err) {
-        console.log({ 'err': err })
-      } else {
-        const data = new UserModel({ fullname, email, gender, password: secure_password, phone });
-        await data.save()
-        res.send(data);
-        console.log(data);
-      }
-    })
-
-  } catch (error) {
-    console.log({ 'error': error });
-    console.log('Something went wrong');
+  const user = await UserModel.find({ email });
+  if (user.length > 0) {
+    res.send(`user already registered`);
+  } else {
+    try {
+      bcrypt.hash(password, 5, async (err, secure_password) => {
+        if (err) {
+          console.log({ err: err });
+        } else {
+          const data = new UserModel({
+            fullname,
+            email,
+            gender,
+            password: secure_password,
+            phone,
+          });
+          await data.save();
+          res.send({ message: `user successfully registered` });
+          
+        }
+      });
+    } catch (error) {
+      console.log({ error: error });
+      console.log("Something went wrong");
+    }
   }
-
 });
-
-
-
 
 module.exports = {
   UserRouter,
