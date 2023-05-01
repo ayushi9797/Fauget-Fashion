@@ -29,21 +29,24 @@ const registeration_form = document.querySelector(".sign-up-form");
         }
         console.log(userObject)
 
-        fetch("http://localhost:4500/user/register", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userObject),
-        }).then((res) => {
+        fetch("https://courageous-pike-cuff.cyclic.app/user/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userObject),
+        })
+          .then((res) => {
             return res.json();
-        }).then((data) => {
+          })
+          .then((data) => {
             alert(`${data.fullname} successfully created`);
             // window.location.href = "homepage.html"
             console.log(data);
-        }).catch((err) => {
+          })
+          .catch((err) => {
             console.log({ err: "err" });
-        });
+          });
 
     })
 
@@ -64,22 +67,26 @@ const registeration_form = document.querySelector(".sign-up-form");
             }
             console.log(userObject);
     
-            fetch('http://localhost:4500/user/login', {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(userObject),
-            }).then((respond) => {
-                return respond.json()
-            }).then((data) => {
-                console.log(data);
-                localStorage.setItem('Token', data.token)
-                alert(`successfully logged in`)
-                window.location.href = './index.html'
-            }).catch((error)=>{
-                console.log({'error':error});
+            fetch("https://courageous-pike-cuff.cyclic.app/user/login", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(userObject),
             })
+              .then((respond) => {
+                return respond.json();
+              })
+              .then((data) => {
+                console.log(data);
+                localStorage.setItem("Token", data.token);
+                localStorage.setItem("data", JSON.stringify(data));
+                alert(`successfully logged in`);
+                window.location.href = "./index.html";
+              })
+              .catch((error) => {
+                console.log({ error: error });
+              });
         })
     }
     
