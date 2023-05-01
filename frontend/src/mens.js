@@ -1,21 +1,37 @@
+// login part
+
+let token = localStorage.getItem("Token");
+console.log(token);
+if (!token) {
+  alert("please login first");
+  window.location.href = "./signup.html";
+}
+
 let bag;
 async function fetching_data() {
   try {
-    let res = await fetch("http://localhost:4500/mens/men");
-    if(res.ok){
-        let data =await res.json();
-       bag=data;
-       renderData(data);
+    let res = await fetch("https://courageous-pike-cuff.cyclic.app/mens/men", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/JSON",
+        Authorization: token,
+      },
+    });
+    if (res.ok) {
+      let data = await res.json();
+      bag = data;
+      renderData(data);
     }
   } catch (error) {
-    alert(error.message);
+    console.log(error.message);
   }
 }
-fetching_data()
-let div=document.getElementById("product-cards")
-function renderData(data){
-    div.innerHTML=`${data.map((elem)=>{
-        return ` <div id="dummy-cart">
+fetching_data();
+let div = document.getElementById("product-cards");
+function renderData(data) {
+  div.innerHTML = `${data
+    .map((elem) => {
+      return ` <div id="dummy-cart">
         <h2>${elem.name}</h2>
         <img src="${elem.thumbnail}" alt="">
         <h2> strike_price:  ${elem.strike_price} <i class="fa-regular fa-dollar-sign"></i></h3>
@@ -25,7 +41,7 @@ function renderData(data){
         
         <button id= "btn">Add to cart</button>
 
-    </div>`
-    }).join(" ")}`
-
+    </div>`;
+    })
+    .join(" ")}`;
 }
