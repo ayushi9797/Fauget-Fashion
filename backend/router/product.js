@@ -23,9 +23,9 @@ WomenRouter.get("/Women", async (req, res) => {
 
 
 WomenRouter.post("/Women", async (req, res) => {
-    const {name,images,category,price,discount, userID } = req.body;
+    const {name,images,category,price,discount } = req.body;
     try {
-      const data = new ProductModel({name,images,category,price,discount,userID });
+      const data = new ProductModel({name,images,category,price,discount });
       console.log(data)
       await data.save();
       res.send({ "Message": "successfully created" });
