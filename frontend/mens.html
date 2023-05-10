@@ -18,7 +18,7 @@
         <div          class="header sticky">
             <div class=logo>
 
-                <a href="index.html"><img width="70%" src="../images/Purple Minimalist Fashion Logo copy.png"
+                <a href="index.html"><img width="70%" src="./images/logo.png"
                         alt="logo" /></a>
             </div>
             <div class="categories">
@@ -183,12 +183,25 @@
 </body>
 
 </html>
-<script src="./src/index.js" type="module"></script>
 
 <script>
+    let token = localStorage.getItem("Token");
+console.log(token);
+if (!token) {
+  alert("please login first");
+  window.location.href = "./signup.html";
+}
+
 let maleproducts = []
-let url = "http://localhost:4500/mens/men"
-fetch(url)
+let url = "https://courageous-pike-cuff.cyclic.app/mens/men"
+
+fetch(url,{
+    method:"GET",
+    headers:{
+        "Content-Type":"application/json",
+        Authorization:token
+    }
+})
     .then((res) => res.json())
     .then((data) => {
         maleproducts = data
