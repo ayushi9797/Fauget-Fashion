@@ -45,6 +45,7 @@ Faucet Fashion is an e-commerce store for fashion and lifestyle products.
 
 
   # Database 
+  ![mongo](https://user-images.githubusercontent.com/112810259/234212464-2585f09c-10a5-43f3-9bba-d07e7a9305e0.jpeg)
     - Mongodb Database
     
   ![image](https://user-images.githubusercontent.com/112810259/233774360-3d043242-ea13-457c-9cc5-8a2cec999f80.png)
